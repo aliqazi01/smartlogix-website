@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartLogix | IT Solutions</title>
+    <!-- Inter font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom colors for your brand */
+        :root {
+            --color-smart-blue: #569AC3;
+            --color-logix-orange: #F58D37;
+            --color-solutions-gray: #9c9BA0;
+        }
+        /* Tailwind custom configuration */
+        .smart-blue { color: var(--color-smart-blue); }
+        .logix-orange { color: var(--color-logix-orange); }
+        .solutions-gray { color: var(--color-solutions-gray); }
+
+        .bg-smart-blue { background-color: var(--color-smart-blue); }
+        .bg-logix-orange { background-color: var(--color-logix-orange); }
+        .bg-solutions-gray { background-color: var(--color-solutions-gray); }
+
+        /* Animation for the hero section button */
+        @keyframes bounce-x {
+            0%, 100% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(5px);
+            }
+        }
+        .animate-bounce-x {
+            animation: bounce-x 1s infinite;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-lg py-4 px-6 fixed top-0 w-full z-50">
+        <nav class="container mx-auto flex justify-between items-center">
+            <!-- Logo Section -->
+            <a href="#" class="flex items-center space-x-4">
+                <!-- Use a relative path to your logo image file -->
+                <img src="smartlogix-logo.jpeg" alt="SmartLogix Company Logo" class="h-16">
+            </a>
+            
+            <!-- Navigation Links -->
+            <div class="flex items-center space-x-4">
+                <a href="#about" class="px-4 py-2 text-gray-700 font-medium hover:text-smart-blue transition-colors duration-300">About Us</a>
+                <a href="#services" class="px-4 py-2 text-gray-700 font-medium hover:text-smart-blue transition-colors duration-300">Our Services</a>
+                <a href="#contact" class="px-6 py-2 bg-logix-orange text-white font-semibold rounded-full shadow-lg hover:bg-logix-orange/90 transition-all duration-300">Contact Us</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="pt-24 pb-12 sm:pt-32 sm:pb-20 bg-gradient-to-br from-white via-gray-100 to-gray-200">
+        <div class="container mx-auto px-6 py-12 flex flex-col items-center text-center">
+            <h1 class="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight">
+                <span class="block smart-blue">Crafting Digital Solutions,</span>
+                <span class="block logix-orange mt-2">One Line of Code at a Time.</span>
+            </h1>
+            <p class="mt-8 text-xl sm:text-2xl text-solutions-gray max-w-3xl leading-relaxed">
+                SmartLogix is your dedicated partner in navigating the digital landscape. We build custom software and deliver innovative IT solutions that drive your business forward.
+            </p>
+            <a href="#contact" class="mt-10 px-8 py-4 bg-logix-orange text-white font-bold text-lg rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                Let's Build Something Great Together
+            </a>
+        </div>
+    </main>
+    
+    <!-- About Us Section -->
+    <section id="about" class="py-16 sm:py-24 bg-gray-200">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl sm:text-5xl font-bold text-center mb-12">
+                Who We <span class="logix-orange">Are</span>
+            </h2>
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="md:w-1/2">
+                    <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                        At SmartLogix, we are a team of passionate innovators and problem-solvers. We believe that technology should be a tool for empowerment, not a source of complexity. Our mission is to transform your ideas into reality by providing bespoke IT solutions that are tailored to your unique needs. We are committed to excellence, transparency, and building long-lasting partnerships with our clients.
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        With years of experience in the industry, our experts are dedicated to delivering high-quality, scalable, and secure solutions that help you navigate the ever-evolving digital landscape and achieve your business objectives.
+                    </p>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://placehold.co/600x400/569AC3/fff?text=SmartLogix+Team" alt="SmartLogix Team" class="w-full h-auto rounded-xl shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 sm:py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl sm:text-5xl font-bold text-center mb-12">
+                Our Core <span class="smart-blue">Services</span>
+            </h2>
+            <p class="text-center text-xl text-solutions-gray max-w-3xl mx-auto mb-16">
+                From concept to completion, we provide end-to-end solutions that are designed to scale and succeed.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Service Card 1: Mobile App Development -->
+                <div class="bg-white rounded-xl shadow-2xl p-8 flex flex-col items-center text-center transform transition-all duration-300 hover:scale-105 hover:shadow-3xl">
+                    <img src="https://placehold.co/150x150/569AC3/fff?text=Mobile+App" alt="Mobile App Development Icon" class="w-32 h-32 rounded-full object-cover mb-6 border-4 border-logix-orange/50">
+                    <h3 class="text-2xl font-bold mb-2 smart-blue">Mobile App Development</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        We design and build intuitive and high-performing mobile applications for iOS and Android platforms, ensuring a seamless user experience.
+                    </p>
+                </div>
+
+                <!-- Service Card 2: Web Development -->
+                <div class="bg-white rounded-xl shadow-2xl p-8 flex flex-col items-center text-center transform transition-all duration-300 hover:scale-105 hover:shadow-3xl">
+                    <img src="https://placehold.co/150x150/F58D37/fff?text=Web+Dev" alt="Web Development Icon" class="w-32 h-32 rounded-full object-cover mb-6 border-4 border-smart-blue/50">
+                    <h3 class="text-2xl font-bold mb-2 logix-orange">Web Development</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        From dynamic corporate websites to complex e-commerce platforms, we create powerful web solutions that are both beautiful and functional.
+                    </p>
+                </div>
+
+                <!-- Service Card 3: Cloud Solutions -->
+                <div class="bg-white rounded-xl shadow-2xl p-8 flex flex-col items-center text-center transform transition-all duration-300 hover:scale-105 hover:shadow-3xl">
+                    <img src="https://placehold.co/150x150/9c9BA0/fff?text=Cloud" alt="Cloud Icon" class="w-32 h-32 rounded-full object-cover mb-6 border-4 border-logix-orange/50">
+                    <h3 class="text-2xl font-bold mb-2 solutions-gray">Cloud Solutions</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Migrate your infrastructure to the cloud with confidence. We provide scalable and secure cloud computing solutions for businesses of all sizes.
+                    </p>
+                </div>
+                
+                <!-- Service Card 4: CRM Systems -->
+                <div class="bg-white rounded-xl shadow-2xl p-8 flex flex-col items-center text-center transform transition-all duration-300 hover:scale-105 hover:shadow-3xl">
+                    <img src="https://placehold.co/150x150/569AC3/fff?text=CRM" alt="CRM Icon" class="w-32 h-32 rounded-full object-cover mb-6 border-4 border-logix-orange/50">
+                    <h3 class="text-2xl font-bold mb-2 smart-blue">CRM Systems</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Streamline your business processes and enhance customer relationships with our custom-built Customer Relationship Management solutions.
+                    </p>
+                </div>
+
+                <!-- Service Card 5: Cybersecurity -->
+                <div class="bg-white rounded-xl shadow-2xl p-8 flex flex-col items-center text-center transform transition-all duration-300 hover:scale-105 hover:shadow-3xl">
+                    <img src="https://placehold.co/150x150/F58D37/fff?text=Cybersecurity" alt="Cybersecurity Icon" class="w-32 h-32 rounded-full object-cover mb-6 border-4 border-smart-blue/50">
+                    <h3 class="text-2xl font-bold mb-2 logix-orange">Cybersecurity</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Protect your data and infrastructure with our robust cybersecurity services, including vulnerability assessments and threat management.
+                    </p>
+                </div>
+
+                <!-- Service Card 6: Data Analytics -->
+                <div class="bg-white rounded-xl shadow-2xl p-8 flex flex-col items-center text-center transform transition-all duration-300 hover:scale-105 hover:shadow-3xl">
+                    <img src="https://placehold.co/150x150/9c9BA0/fff?text=Data" alt="Data Analytics Icon" class="w-32 h-32 rounded-full object-cover mb-6 border-4 border-logix-orange/50">
+                    <h3 class="text-2xl font-bold mb-2 solutions-gray">Data Analytics</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Unlock the power of your data. We help you gain actionable insights with advanced data analytics and business intelligence solutions.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="py-16 sm:py-24 bg-gray-900 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl sm:text-5xl font-bold mb-4">
+                Get In <span class="logix-orange">Touch</span>
+            </h2>
+            <p class="text-xl max-w-3xl mx-auto mb-8 text-gray-300">
+                Ready to transform your business? Fill out the form below or contact us directly.
+            </p>
+            <div class="bg-gray-800 rounded-xl shadow-2xl p-8 max-w-lg mx-auto">
+                <form action="#" method="POST" class="space-y-6">
+                    <div>
+                        <input type="text" name="name" placeholder="Your Name" class="w-full px-4 py-3 bg-gray-700 text-white border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-logix-orange transition-all duration-300" required>
+                    </div>
+                    <div>
+                        <input type="email" name="email" placeholder="Your Email" class="w-full px-4 py-3 bg-gray-700 text-white border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-logix-orange transition-all duration-300" required>
+                    </div>
+                    <div>
+                        <textarea name="message" rows="5" placeholder="Your Message" class="w-full px-4 py-3 bg-gray-700 text-white border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-logix-orange transition-all duration-300" required></textarea>
+                    </div>
+                    <button type="submit" class="w-full px-8 py-4 bg-logix-orange text-white font-bold text-lg rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-400 py-10 px-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 SmartLogix. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
